@@ -12,10 +12,10 @@ Don't be intimidated by the long URLs. In the code, you only need to specify a r
 where `<ROOT_URI>` can be any of the folowing strings:
 
 |ORIGIN	|ROOT_URI	|NOTE |
-|-------|:-------:|-------|
+|:-------|:-------:|-------|
 |LAN	|`http://<gateway IP>/cgi-bin/api/`	|does not depend on internet connection|
 |kappa cloud	|`https://river.kapparock.com/user/api/`	|can be used anywhere, internet connection required|
-
+|`<@=WIDGETROOT@>`|automatic substitution| it will be automatic substituted with either LAN or cloud root, the client-side html/javascipt must be originated from kappaBox|
 
 
 
