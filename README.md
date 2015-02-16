@@ -10,10 +10,10 @@ Assuming the kappaBox connected to the internet, both URLs will return the same 
 Don't be intimidated by the long URLs. In the code, you only need to specify a relative URI or Uniform Resource Identifier, which is "hello" in this case. The prefixes, `http://192.168.1.1/cgi-bin/api/` and `https://river.kapparock.com/user/api/` determine whethere the request is be routed over the internet or just locally within its LAN. In fact, the URLs are in the form: <pre>`<ROOT_URI>/hello` </pre>
 where <pre>`<ROOT_URI>`</pre> can be any of the folowing strings:
 
-|ORIGIN	|ROOT_URI	|EXAMPLE|
+|ORIGIN	|ROOT_URI	|NOTE |
 |-------|:-------:|-------|
-|LAN	|`<gateway IP>/cgi-bin/api/`	|`192.168.1.1/cgi-bin/api/hello`|
-|kappa cloud	|`https://river.kapparock.com/user/api/`	|`https://river.kapparock.com/user/api/hello`|
+|LAN	|`<gateway IP>/cgi-bin/api/`	|does not depend on internet connection|
+|kappa cloud	|`https://river.kapparock.com/user/api/`	|can be used anywhere, internet connection required|
 
 
 
