@@ -21,7 +21,7 @@
 //			OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //			THE SOFTWARE.
 //====================================================================================
-
+/*
 #include "notification.h"
 #include "apsdb.h"
 #include "kjson.h"
@@ -41,7 +41,6 @@ namespace
 
 	void myInit()
 	{
-		/* register an endpoint, obtain the endpoint address */
 		Endpoint& localEndpt = thisDevice().newEndpoint(0x80);
 		handler(ApplicationInterface::EventTag, localEndpt.uri() + "/hello", [&localEndpt](Context C) {
 				C.response("It worked!");
@@ -53,4 +52,17 @@ namespace
 void init()
 {
 	myInit();
+}
+*/
+
+#include "notification.h"
+#include "restful.h"
+#include "hello-world-restful.h"
+void init()
+{
+	using Context = ApplicationInterface::Context;
+	kapi::notify::handler("Application", "hello", [](Context C) {
+		C.response("It worked!");
+	});
+	return;
 }
