@@ -21,39 +21,6 @@
 //			OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //			THE SOFTWARE.
 //====================================================================================
-/*
-#include "notification.h"
-#include "apsdb.h"
-#include "kjson.h"
-#include "restful.h"
-#include <vector>
-#include <iostream>
-#include <string>
-#include <utility>
-#include "hello-world-restful.h"
-
-namespace
-{
-	using namespace aps;
-	using namespace std;
-	using namespace kapi::notify;
-	using 	Context = ApplicationInterface::Context;
-
-	void myInit()
-	{
-		Endpoint& localEndpt = thisDevice().newEndpoint(0x80);
-		handler(ApplicationInterface::EventTag, localEndpt.uri() + "/hello", [&localEndpt](Context C) {
-				C.response("It worked!");
-		});
-		return;
-	}
-}
-
-void init()
-{
-	myInit();
-}
-*/
 
 #include "notification.h"
 #include "restful.h"
